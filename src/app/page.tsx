@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero";
 import { Proposito } from "@/components/Proposito";
 import { Aulas } from "@/components/Aulas";
 import { Objetivos } from "@/components/Objetivos";
+import { Time } from "@/components/Time";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Proposito />
       <Aulas />
       <Objetivos />
+      <Time />
     </main>
   );
 }
