@@ -57,9 +57,13 @@ export function Header() {
 
                 {/* Botão de Ação */}
                 <div className="shrink-0">
-                    <button className="rounded-full bg-foreground px-8 py-3 text-xs font-semibold text-background transition-all duration-300 hover:scale-105 active:scale-95 shadow-sm">
+                    <Link
+                        href="#aulas"
+                        onClick={() => setActiveItem('AULAS')}
+                        className="inline-block rounded-full bg-foreground px-8 py-3 text-xs font-semibold text-background transition-all duration-300 hover:scale-105 active:scale-95 shadow-sm"
+                    >
                         Começar
-                    </button>
+                    </Link>
                 </div>
 
             </div>

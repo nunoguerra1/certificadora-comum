@@ -1,6 +1,7 @@
 'use client';
 
 import Image from "next/image";
+import Link from "next/link"; // Importado para navegação interna
 import { useEffect, useState, useMemo } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import type { Container, Engine, ISourceOptions } from "@tsparticles/engine";
@@ -111,12 +112,19 @@ export function Hero() {
                     </p>
 
                     <div className="mt-10 flex flex-wrap items-center gap-4">
-                        <button className="rounded-full bg-zinc-900 px-8 py-3.5 text-xs font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95">
+                        <Link
+                            href="#aulas"
+                            className="inline-flex items-center justify-center rounded-full bg-zinc-900 px-8 py-3.5 text-xs font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95"
+                        >
                             INICIAR JORNADA
-                        </button>
-                        <button className="rounded-full border border-zinc-200 bg-white px-8 py-3.5 text-xs font-semibold text-zinc-900 transition-all duration-300 hover:bg-zinc-50 hover:scale-105 active:scale-95 shadow-sm">
+                        </Link>
+
+                        <Link
+                            href="#objetivos"
+                            className="inline-flex items-center justify-center rounded-full border border-zinc-200 bg-white px-8 py-3.5 text-xs font-semibold text-zinc-900 transition-all duration-300 hover:bg-zinc-50 hover:scale-105 active:scale-95 shadow-sm"
+                        >
                             CONHECER O MÉTODO
-                        </button>
+                        </Link>
                     </div>
                 </div>
 
